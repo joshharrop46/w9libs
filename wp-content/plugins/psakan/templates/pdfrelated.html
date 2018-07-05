@@ -1,0 +1,40 @@
+{% api %}
+
+
+
+
+</p>
+
+
+
+{% for index, item in api %}{% if index > 2 %}{% if index < 5 %}
+<div align="left">
+<span style="font-size:20px; color: #1b8ede;">{{item.title  | remove '...' | trim | strtolower | ucfirst }}</span><br />
+</div>
+<div align="justify">Download <strong>{{ term }}</strong> {{item.description | remove '...' | trim | strtolower | ucfirst }}.<br />
+<a href="http://b9ad.pro-us-east-1.openshiftapps.com/{{ item.title | hyphenize }}/" target="_blank" title="{{ item.title }}">pdf download</a>
+</div>
+
+
+<br />
+			
+<div style="display:block;height:2px;border-bottom:1px solid #DDD;"></div> 
+{% endif %}{% endif %}
+{% endfor %}
+
+
+{% for index, item in api %}{% if index > 5 %}{% if index < 8 %}
+<div align="left">
+<span style="font-size:20px; color: #1b8ede;"><a href="http://b9ad.pro-us-east-1.openshiftapps.com/{{ item.title | hyphenize }}/" target="_blank" title="{{ item.title }}">{{item.title  | remove '...' | trim | strtolower | ucfirst }}</a></span>
+</div>
+{{item.description | remove '...' | trim | strtolower | ucfirst }}.
+<br /><br />
+			
+<div style="display:block;height:2px;border-bottom:1px solid #DDD;"></div> 
+{% endif %}{% endif %}
+{% endfor %}
+
+
+
+</div>
+

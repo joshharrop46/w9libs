@@ -1,0 +1,102 @@
+{% api %}{% image %}{% video %}
+
+
+
+
+<h2>{{term}} Online Journal</h2>
+<br/>
+<h3>{% for index, item in api %}{% if index < 1 %}
+<a href="{{ item.link }}" rel="nofollow" title="{{item.title  | remove '...' |  remove '.' | remove '-' | trim | strtolower | ucfirst }}" onclick="window.open('http://i9-printable.b9ad.pro-us-east-1.openshiftapps.com/{{ item.title | hyphenize }}/')">{{item.title | remove '...' |  remove '.' | remove '|' | remove '-' | trim | strtolower | ucfirst }}</a>
+{% endif %}
+{% endfor %}</h3>
+<div style='font-size:13px;font-size:0.9rem'>
+<p>
+
+{% for index, item in api %}{% if index < 2 %}
+{{item.description | remove '...' | remove '.' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}
+{% endfor %}
+</div></p>
+<br style="clear: both;"></br><hr/>
+
+
+
+
+<br/>
+{% for index, item in api %}{% if index > 0 %}{% if index < 2 %}
+<h3><a href="{{ item.link }}" rel="nofollow" title="{{item.title  | remove '...' |  remove '.' | remove '-' | trim | strtolower | ucfirst }}" onclick="window.open('http://i9-printable.b9ad.pro-us-east-1.openshiftapps.com/{{ item.title | hyphenize }}/')">{{item.title | remove '...' |  remove '.' | remove '|' | remove '-' | trim | strtolower | ucfirst }}</a></h3>
+{% endif %}{% endif %}
+{% endfor %}
+<div style='font-size:13px;font-size:0.9rem'>
+<p>
+
+
+{% for index, item in api %}{% if index < 1 %}
+{{item.title | remove '...' | remove '.' | remove '-' | trim | strtolower | ucfirst | safe}}
+{% endif %}
+{% endfor %}
+{% for index, item in api %}{% if index > 0 %}{% if index < 2 %}
+{{item.title | remove '...' | remove '.' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}{% endif %}
+{% endfor %}
+{% for index, item in api %}{% if index > 0 %}{% if index < 2 %}
+{{item.description | remove '...' | remove '.' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}{% endif %}
+{% endfor %}
+</div></p>
+<br style="clear: both;"></br><hr/>
+
+
+<br/>
+{% for index, item in api %}{% if index > 2 %}{% if index < 4 %}
+<font size="4" color="red"><a href="{{ item.link }}" rel="nofollow" title="{{item.title  | remove '...' |  remove '.' | remove '-' | trim | strtolower | ucfirst }}" onclick="window.open('http://i9-printable.b9ad.pro-us-east-1.openshiftapps.com/{{ item.title | hyphenize }}/')">{{item.title | remove '...' |  remove '.' | remove '|' | remove '-' | trim | strtolower | ucfirst }}</a></font>
+{% endif %}{% endif %}
+{% endfor %}
+<div style='font-size:13px;font-size:0.9rem'>
+<p>
+
+{% for index, item in api %}{% if index > 1 %}{% if index < 3 %}
+{{item.title | remove '...' | remove '.' | remove '-' | trim | strtolower | ucfirst | safe}}
+{% endif %}{% endif %}
+{% endfor %}
+{% for index, item in api %}{% if index > 2 %}{% if index < 4 %}
+{{item.title | remove '...' | remove '.' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}{% endif %}
+{% endfor %}
+{% for index, item in api %}{% if index > 2 %}{% if index < 4 %}
+{{item.description | remove '...' | remove '.' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}{% endif %}
+{% endfor %}
+</div></p>
+<br style="clear: both;"></br><hr/>
+
+
+<p>
+{% for index, item in api %}{% if index > 0 %}{% if index < 2 %}
+{{item.description | remove '...' | remove '.' | remove '|' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}{% endif %}
+{% endfor %}
+{% for index, item in api %}{% if index > 3 %}{% if index < 5 %}
+{{item.description | remove '...' | remove '.' | remove '|' | remove '-' | trim | strtolower | ucfirst | safe}}
+{% endif %}{% endif %}
+{% endfor %}
+{% for index, item in api %}{% if index > 3 %}{% if index < 5 %}
+{{item.title  | remove '...' |  remove '.' | remove '|' | remove '-' | trim | strtolower | ucfirst }}
+{% endif %}{% endif %}
+{% endfor %}
+</p>
+<br />
+
+<p>
+{% for index, item in api %}{% if index > 8 %}{% if index < 10 %}
+{{item.description | remove '...' | remove ',' | remove '|' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}{% endif %}
+{% endfor %}
+{% for index, item in api %}{% if index > 4 %}{% if index < 7 %}
+{{item.description | remove '...' | remove ',' | remove '|' | remove '-' | trim | strtolower | ucfirst | safe}}.
+{% endif %}{% endif %}
+{% endfor %}</p>
+{% for index, item in images %}{% if index > 2 %}{% if index < 4 %}
+Full Article <a href="http://i9-printable.b9ad.pro-us-east-1.openshiftapps.com/{{ item.title | hyphenize }}/" title="{{item.title  | remove '...' |  remove '.' | remove '-' | trim | strtolower | ucfirst }}">{{ item.title }}</a>.<br/>
+{% endif %}{% endif %}
+{% endfor %}
