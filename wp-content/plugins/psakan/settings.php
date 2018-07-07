@@ -4,7 +4,7 @@ $spp_settings = new stdClass;
 
 // You can have more than one rewrite rule now
 $spp_settings->url_rewrites = array( 
-    'show' => array('separator' => '-', 'rule' => 'opt/(.*)', 'index' => 1, 'permalink' => 'opt/{{ term }}/' ), //0
+    'show' => array('separator' => '-', 'rule' => 'txs/(.*)', 'index' => 1, 'permalink' => 'txs/{{ term }}/' ), //0
     'random' => array('separator' => '-', 'rule' => '(.*)/(.*)\.html', 'index' => 2, 'permalink' => '{{ random }}/{{ term }}.html' ), //1
     'first_word' => array('separator' => '-', 'rule' => '(.*)/(.*)\.html', 'index' => 2, 'permalink' => '{{ first_word }}/{{ term }}.html' ), //2
     

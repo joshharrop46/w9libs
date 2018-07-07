@@ -1,12 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
-
 <meta charset="utf-8">
 <meta content='index,follow' name='alexabot'/>
 <meta content='en-us' name='language'/>
 <meta content='us' name='geo.country'/>
-<meta name="propeller" content="3cb7cb95a4e408ef2ce60b19d7ec0774" />
 <meta content='document' name='resource-type'/>
 <meta content='Global' name='Distribution'/>
 <meta content='general' name='rating'/>
@@ -28,7 +26,7 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="Shortcut Icon" href="<?php bloginfo('stylesheet_directory');?>/images/favicon.ico" type="image/x-icon" />
 
-<?php if ( is_search() || is_tag() ) : ?><link rel="canonical" href="<?php bloginfo('url');?>/sri/<?php $ab=strtolower($s); echo str_replace(' ', '-',$ab); ?>/" />
+<?php if ( is_search() || is_tag() ) : ?><link rel="canonical" href="<?php bloginfo('url');?>/txs/<?php $ab=strtolower($s); echo str_replace(' ', '-',$ab); ?>/" />
 <meta name="keywords" content="<?php the_search_query(); ?> "/>
 <meta name="description" content="<?php echo spp(get_search_query(), 'metadesc.html'); ?> "/>
 
